@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>assignment</title>
+    <link rel="stylesheet" href="../css/test01.css" type="text/css" />
+</head>
+ 
+<body>
+   
+    <script>
+        $(document).ready(function () {
+            $.getJSON("jqueryassignmentdummydata")
+            function ones() {
+ 
+                // 请求获取数据
+                $.ajax({
+                    url: "jqueryassignmentdummydata.json",
+                    type: "GET",
+                    dataType: "json",
+                    success: function (result) { //成功操作
+                        res = result.data;
+                        console.log(res);
+                        var tab = $("#table1")[0];
+                        tab = tab.childNodes[1]; //tbody标签
+ 
+              })；
+  
+        })；
+    </script>
+</body>
+ 
+</html>

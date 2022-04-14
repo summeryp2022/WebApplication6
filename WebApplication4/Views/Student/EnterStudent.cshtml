@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EnterStudent</title>
+</head>
+<body>
+    <form action="submit" method="post">
+        <div>
+            student RollNo :  <input name="StudentRollNo" type="text" /><br />
+            student Name :<input name="StudentName" type="text" /><br />
+            student Standard :<input name="StudentStd" type="text" /><br />
+            student Division :<input name="StudentDiv" type="text" /><br />
+            <input id="Submit1" type="submit" value="submit" /><br />
+        </div>
+    </form>
+    @{Html.RenderAction("Test");}
+</body>
+</html>

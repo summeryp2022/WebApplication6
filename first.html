@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+ jQuery.ajax({
+            "type": "GET",
+            "url": "jqueryassignmentdummydata.json",
+            "datatype": "JSON",
+            "success": function (data) {
+                localStorage.setItem("userList", JSON.stringify(data));
+            },
+            "error": function () {
+                alert('Error happened while making server request!!!');
+            }
+        });
+</script>
+</head>
+<body>
+
+
+
+</body>
+</html>
+
+
